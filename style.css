@@ -352,6 +352,18 @@ section {
   background: var(--light-bg);
   padding: 1rem;
   border-radius: 12px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact-item:hover {
+  background: rgba(99, 102, 241, 0.1);
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+.contact-item:visited {
+  color: inherit;
 }
 
 .contact-icon {
