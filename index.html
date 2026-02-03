@@ -4,148 +4,283 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sai Krishna Durgam | Python Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="bg-animation">
-    <span></span><span></span><span></span><span></span><span></span>
-    <span></span><span></span><span></span><span></span><span></span>
+  <div class="ambient">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+    <span class="orb orb-4"></span>
+    <span class="orb orb-5"></span>
   </div>
 
   <nav id="navbar">
     <div class="nav-container">
-      <div class="logo">SKD</div>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <div class="mobile-menu" id="mobileMenu">
-        <span></span><span></span><span></span>
+      <a class="logo" href="#home">SKD</a>
+      <div class="nav-actions">
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a class="nav-link" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#skills">Skills</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
       </div>
     </div>
   </nav>
 
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <h1>Sai Krishna Durgam</h1>
-      <h2>Python Developer</h2>
-      <div class="typing-text" id="typingText"></div>
-      <p>Passionate about AI, ML, and building innovative solutions that solve real-world problems</p>
-      <div class="cta-buttons">
-        <a href="#projects" class="btn btn-primary">View My Work</a>
-        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+  <header id="home" class="hero">
+    <div class="hero-grid">
+      <div class="hero-text reveal">
+        <p class="eyebrow">Python Developer / AI-ML / Backend</p>
+        <h1>
+          Sai Krishna
+          <span>Durgam</span>
+        </h1>
+        <p class="typing-text" id="typingText"></p>
+        <p class="lead">I build clean, scalable systems and data-driven products that feel fast, thoughtful, and reliable.</p>
+        <div class="cta-buttons">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        </div>
+        <div class="hero-metrics">
+          <div class="metric">
+            <span class="metric-value counter" data-target="4">0</span>
+            <span class="metric-label">Projects</span>
+          </div>
+          <div class="metric">
+            <span class="metric-value counter" data-target="10">0</span>
+            <span class="metric-label">Technologies</span>
+          </div>
+          <div class="metric">
+            <span class="metric-value counter" data-target="2">0</span>
+            <span class="metric-label">Certifications</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-card reveal">
+        <div class="card-header">
+          <div class="status-dot"></div>
+          <p>Open to roles and collaborations</p>
+        </div>
+        <div class="card-body">
+          <div class="profile">
+            <div class="profile-ring"></div>
+            <div class="profile-initials">SKD</div>
+          </div>
+          <div class="card-details">
+            <h3>Python Developer</h3>
+            <p>Focused on AI, ML, and web services</p>
+          </div>
+          <div class="card-tags">
+            <span class="pill">Django</span>
+            <span class="pill">Flask</span>
+            <span class="pill">Scikit-learn</span>
+            <span class="pill">SQL</span>
+          </div>
+          <div class="card-actions">
+            <a href="#contact" class="btn btn-ghost">Hire Me</a>
+            <a href="#projects" class="btn btn-outline">See Projects</a>
+          </div>
+        </div>
       </div>
     </div>
-  </section>
+  </header>
 
-  <section id="about" class="reveal">
-    <h2 class="section-title">About Me</h2>
-    <div class="about-content">
-      <div class="about-text">
-        <p>A passionate Python developer with a strong foundation in data structures, algorithms, and backend development. Curious and driven towards innovative solutions in the fields of Artificial Intelligence and Machine Learning.</p>
-        <p>I have proven experience in building real-world applications using modern web frameworks and APIs. I'm keen to contribute to software systems that solve real-world problems and improve efficiency.</p>
+  <section id="about" class="section">
+    <div class="section-heading reveal">
+      <h2>About Me</h2>
+      <p>Curious, dependable, and focused on real-world impact.</p>
+    </div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>A Python developer with a strong foundation in data structures, algorithms, and backend development. I enjoy turning messy data into clean, trustworthy systems.</p>
+        <p>I build production-ready applications with modern frameworks and APIs. My work emphasizes performance, clarity, and the human experience of using software.</p>
         <p>Currently pursuing Bachelor of Technology in Computer Science and Engineering at Brilliant Institute of Engineering and Technology (2021-2025).</p>
       </div>
-      <div class="about-stats">
-        <div class="stat-card"><div class="stat-number">4+</div><div class="stat-label">Projects Completed</div></div>
-        <div class="stat-card"><div class="stat-number">10+</div><div class="stat-label">Technologies</div></div>
-        <div class="stat-card"><div class="stat-number">2</div><div class="stat-label">Certifications</div></div>
-        <div class="stat-card"><div class="stat-number">100%</div><div class="stat-label">Dedication</div></div>
+      <div class="about-panel reveal">
+        <div class="about-highlight">
+          <h3>Core Strengths</h3>
+          <ul>
+            <li>Backend engineering with Python and Django</li>
+            <li>Data pipelines and ML experimentation</li>
+            <li>API design and performance tuning</li>
+            <li>Clear, consistent documentation</li>
+          </ul>
+        </div>
+        <div class="about-highlight">
+          <h3>Current Focus</h3>
+          <p>Building AI-driven tools that blend usability with meaningful analytics.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="skills" class="reveal">
-    <h2 class="section-title">Technical Skills</h2>
-    <div class="skills-container">
-      <div class="skill-category">
-        <h3>💻 Languages & Tools</h3>
-        <ul class="skill-list"><li>Python</li><li>SQL</li><li>HTML/CSS</li><li>JavaScript</li></ul>
+  <section id="skills" class="section">
+    <div class="section-heading reveal">
+      <h2>Technical Skills</h2>
+      <p>Tools I use to build and ship reliable products.</p>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <h3>Languages</h3>
+        <div class="skill-pills">
+          <span>Python</span><span>SQL</span><span>HTML</span><span>CSS</span><span>JavaScript</span>
+        </div>
+        <div class="skill-meter">
+          <div class="meter-label"><span>Python</span><span>Advanced</span></div>
+          <div class="meter-bar"><span data-progress="92"></span></div>
+        </div>
+        <div class="skill-meter">
+          <div class="meter-label"><span>SQL</span><span>Advanced</span></div>
+          <div class="meter-bar"><span data-progress="85"></span></div>
+        </div>
       </div>
-      <div class="skill-category">
-        <h3>🚀 Frameworks & Libraries</h3>
-        <ul class="skill-list"><li>Flask</li><li>Django</li><li>Pandas</li><li>NumPy</li><li>Scikit-learn</li><li>Matplotlib</li><li>Streamlit</li></ul>
+      <div class="skill-card reveal">
+        <h3>Frameworks</h3>
+        <div class="skill-pills">
+          <span>Django</span><span>Flask</span><span>Streamlit</span><span>Pandas</span><span>NumPy</span>
+        </div>
+        <div class="skill-meter">
+          <div class="meter-label"><span>Django</span><span>Strong</span></div>
+          <div class="meter-bar"><span data-progress="82"></span></div>
+        </div>
+        <div class="skill-meter">
+          <div class="meter-label"><span>Scikit-learn</span><span>Strong</span></div>
+          <div class="meter-bar"><span data-progress="78"></span></div>
+        </div>
       </div>
-      <div class="skill-category">
-        <h3>🗄️ Databases</h3>
-        <ul class="skill-list"><li>MySQL</li><li>MongoDB</li><li>SQLite</li></ul>
-      </div>
-      <div class="skill-category">
-        <h3>🛠️ Developer Tools</h3>
-        <ul class="skill-list"><li>Git & GitHub</li><li>VS Code</li><li>REST APIs</li><li>OpenWeather API</li><li>TMDB API</li></ul>
+      <div class="skill-card reveal">
+        <h3>Data and Tools</h3>
+        <div class="skill-pills">
+          <span>MySQL</span><span>MongoDB</span><span>SQLite</span><span>Git</span><span>REST APIs</span>
+        </div>
+        <div class="skill-meter">
+          <div class="meter-label"><span>Data Modeling</span><span>Strong</span></div>
+          <div class="meter-bar"><span data-progress="80"></span></div>
+        </div>
+        <div class="skill-meter">
+          <div class="meter-label"><span>API Design</span><span>Advanced</span></div>
+          <div class="meter-bar"><span data-progress="86"></span></div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="projects" class="reveal">
-    <h2 class="section-title">Featured Projects</h2>
+  <section id="projects" class="section">
+    <div class="section-heading reveal">
+      <h2>Featured Projects</h2>
+      <p>Selected work that combines data, UX, and scalable engineering.</p>
+    </div>
+    <div class="project-filters reveal">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="ml">AI / ML</button>
+      <button class="filter-btn" data-filter="web">Web Apps</button>
+      <button class="filter-btn" data-filter="data">Data</button>
+    </div>
     <div class="projects-grid">
-      <div class="project-card">
-        <div class="project-image">🎬</div>
-        <div class="project-content">
-          <h3>Movie Recommendation System</h3>
-          <p>A hybrid recommendation system combining content-based and collaborative filtering with personalized suggestions.</p>
-          <div class="project-tags"><span class="tag">Python</span><span class="tag">Flask</span><span class="tag">Scikit-learn</span><span class="tag">TMDB API</span></div>
+      <article class="project-card reveal" data-category="ml">
+        <div class="project-badge">AI</div>
+        <h3>Movie Recommendation System</h3>
+        <p>A hybrid recommendation engine combining content-based and collaborative filtering for personalized picks.</p>
+        <div class="project-tags">
+          <span>Python</span><span>Flask</span><span>Scikit-learn</span><span>TMDB API</span>
         </div>
-      </div>
-      <div class="project-card">
-        <div class="project-image">🛒</div>
-        <div class="project-content">
-          <h3>Online Store</h3>
-          <p>A full-featured e-commerce web app using Django where users can place and manage orders efficiently.</p>
-          <div class="project-tags"><span class="tag">Python</span><span class="tag">Django</span><span class="tag">SQLite</span></div>
+      </article>
+      <article class="project-card reveal" data-category="web">
+        <div class="project-badge">Web</div>
+        <h3>Online Store</h3>
+        <p>A full-featured e-commerce app using Django with product, cart, and order workflows.</p>
+        <div class="project-tags">
+          <span>Python</span><span>Django</span><span>SQLite</span>
         </div>
-      </div>
-      <div class="project-card">
-        <div class="project-image">🌤️</div>
-        <div class="project-content">
-          <h3>Weather Forecast Visualizer</h3>
-          <p>A Python web app that visualizes 5-day weather forecasts using OpenWeather API and interactive charts.</p>
-          <div class="project-tags"><span class="tag">Python</span><span class="tag">Streamlit</span><span class="tag">Matplotlib</span><span class="tag">API</span></div>
+      </article>
+      <article class="project-card reveal" data-category="data">
+        <div class="project-badge">Data</div>
+        <h3>Weather Forecast Visualizer</h3>
+        <p>5-day weather insights with API data, charts, and a clean Streamlit interface.</p>
+        <div class="project-tags">
+          <span>Python</span><span>Streamlit</span><span>Matplotlib</span><span>API</span>
         </div>
-      </div>
-      <div class="project-card">
-        <div class="project-image">🏫</div>
-        <div class="project-content">
-          <h3>School Management System</h3>
-          <p>A Python-based desktop GUI app for managing academic data with an SQL backend.</p>
-          <div class="project-tags"><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">GUI</span></div>
+      </article>
+      <article class="project-card reveal" data-category="web">
+        <div class="project-badge">App</div>
+        <h3>School Management System</h3>
+        <p>Desktop GUI tool for academic data management with an SQL backend.</p>
+        <div class="project-tags">
+          <span>Python</span><span>SQL</span><span>GUI</span>
         </div>
-      </div>
+      </article>
     </div>
   </section>
 
-  <section id="contact" class="reveal">
-    <h2 class="section-title">Get In Touch</h2>
-    <div class="contact-container">
-      <div class="contact-info">
-        <a href="mailto:krshxcx@gmail.com" class="contact-item"><div class="contact-icon">📧</div><div><h4>Email</h4><p>krshxcx@gmail.com</p></div></a>
-        <a href="tel:+91 8499035571" class="contact-item"><div class="contact-icon">📱</div><div><h4>Phone</h4><p>+91 8499035571</p></div></a>
-        <a href="https://www.linkedin.com/in/saikrishna-durgam/" target="_blank" class="contact-item"><div class="contact-icon">💼</div><div><h4>LinkedIn </h4><p>saikrishna-durgam</p></div></a>
-        <a href="https://github.com/krshxcx" target="_blank" class="contact-item"><div class="contact-icon">💻</div><div><h4>GitHub</h4><p>krshxcx</p></div></a>
+  <section id="contact" class="section">
+    <div class="section-heading reveal">
+      <h2>Get In Touch</h2>
+      <p>Have an idea or role in mind? Let us build something solid.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <div class="contact-card">
+          <h4>Email</h4>
+          <p><a href="mailto:krshxcx@gmail.com">krshxcx@gmail.com</a></p>
+        </div>
+        <div class="contact-card">
+          <h4>Phone</h4>
+          <p><a href="tel:+91 8499035571">+91 8499035571</a></p>
+        </div>
+        <div class="contact-card">
+          <h4>LinkedIn</h4>
+          <p><a href="https://www.linkedin.com/in/saikrishna-durgam/" target="_blank" rel="noreferrer">saikrishna-durgam</a></p>
+        </div>
+        <div class="contact-card">
+          <h4>GitHub</h4>
+          <p><a href="https://github.com/krshxcx" target="_blank" rel="noreferrer">krshxcx</a></p>
+        </div>
       </div>
-      <form class="contact-form" id="contactForm">
-        <div class="form-group"><label for="name">Name</label><input type="text" id="name" required></div>
-        <div class="form-group"><label for="email">Email</label><input type="email" id="email" required></div>
-        <div class="form-group"><label for="message">Message</label><textarea id="message" required></textarea></div>
+      <form class="contact-form reveal" id="contactForm" method="post" action="/contact">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <div class="hp-field" aria-hidden="true">
+          <label for="company">Company</label>
+          <input type="text" id="company" name="company" autocomplete="off" tabindex="-1">
+        </div>
         <button type="submit" class="btn btn-primary">Send Message</button>
+        <p class="form-status" id="formStatus" aria-live="polite"></p>
       </form>
     </div>
   </section>
 
   <footer>
-    <div class="social-links">
-      <a href="https://www.linkedin.com/in/saikrishna-durgam/" target="_blank">💼</a>
-      <a href="https://github.com/krshxcx" target="_blank">💻</a>
-      <a href="mailto:krshxcx@gmail.com">📧</a>
+    <div class="footer-content">
+      <p>Ready to build something thoughtful and useful.</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/saikrishna-durgam/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://github.com/krshxcx" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="mailto:krshxcx@gmail.com">Email</a>
+      </div>
     </div>
-    <p>© 2025 Sai Krishna Durgam. All rights reserved.</p>
+    <p class="footer-bottom">© <span id="currentYear">2026</span> Sai Krishna Durgam. All rights reserved.</p>
   </footer>
 
-  <div class="scroll-top" id="scrollTop">↑</div>
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">Top</button>
   <script src="script.js"></script>
 </body>
 </html>
